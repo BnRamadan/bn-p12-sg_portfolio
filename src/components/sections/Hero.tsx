@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../../context/LanguageContext';
 import { ThemeContext } from '../../context/ThemeContext';
+import Logo from '../../Pics/Logo.png';
 
 const Hero: React.FC = () => {
   const { t } = useContext(LanguageContext);
@@ -51,7 +52,7 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="lg:w-1/2 flex justify-center lg:justify-end animate-fade-in-up animation-delay-600">
-            <img src="/src/Pics/Logo.png" alt="Sara Ghoneim" className="h-64 w-64 md:h-80 md:w-80 object-contain" />
+            <img src={Logo} alt="Sara Ghoneim" className="h-64 w-64 md:h-80 md:w-80 object-contain" />
           </div>
         </div>
 
